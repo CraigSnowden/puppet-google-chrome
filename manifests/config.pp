@@ -19,6 +19,7 @@ class google_chrome::config() inherits google_chrome::params {
           source => 'http://dl-ssl.google.com/linux/linux_signing_key.pub'
         },
         repos    => 'main',
+        architecture => 'amd64',
         include  => {
           'src' => false
         },
